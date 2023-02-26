@@ -1,2 +1,2 @@
 # jamesli.dev
-pp
+Personal Portfolio Website
