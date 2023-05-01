@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export default function Main() {
+export default function Home() {
   return (
     <main>
       {/* <h1 className="main--title">Fun facts about React</h1>
@@ -13,6 +13,18 @@ export default function Main() {
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul> */}
       <center>
+        <section id="About">
+          <h1>About</h1>
+        </section>
+        <section id="Projects">
+          <h1>Projects</h1>
+        </section>
+        <section id="Resume">
+          <h1>Resume</h1>
+        </section>
+        <section id="Contact">
+          <h1>Contact</h1>
+        </section>
         <h1 class="name">James Li</h1>
         <div class="links">
           <a href="https://github.com/skxvtchy">
