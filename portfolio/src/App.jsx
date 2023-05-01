@@ -1,16 +1,12 @@
-import About from './components/About'
-import Contact from './components/Contact'
-import Navbar from './components/Navbar'
-import Resume from './components/Resume'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <About/>
-      <Contact/>
+    <div className="container">
+      <Navbar />
+      <Main />
     </div>
-  )
+  );
 }
-
-export default App

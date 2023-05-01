@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <div>
-        <h1>cock</h1>
-        <h2>wow</h2>
-    </div>
-  )
+    <nav>
+      <img src="/assets/cube.png" className="nav--icon" width="100" />
+      <h3 className="nav--logo_text">ReactFacts</h3>
+      <h4 className="nav--title">React Course - Project 1</h4>
+    </nav>
+  );
 }
-
-export default Navbar
