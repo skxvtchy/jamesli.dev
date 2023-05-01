@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# dist
 dist-ssr
 *.local
 
@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#!/bin/sh
+if [ -z "$1" ]
+then
+  echo "Which folder do you want to deploy to GitHub Pages?"
+  exit 1
+fi
+git subtree push --prefix $1 origin gh-pages
