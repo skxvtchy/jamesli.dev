@@ -12,6 +12,11 @@ export default function Main() {
       </section>
       <section id="Resume">
         <h1>Resume</h1>
+        <embed
+          src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf?#zoom=67"
+          width="90%"
+          height="800"
+        ></embed>
       </section>
       <section id="Contact">
         <h1 id="Contact">Contact</h1>
