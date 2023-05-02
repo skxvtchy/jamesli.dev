@@ -16,6 +16,7 @@ export default function Navbar() {
       <a href="#Projects">Projects</a>
       <a href="#Resume">Resume</a>
       <a href="#Contact">Contact</a>
+      <a href="#Mode">DarkMode</a>
     </nav>
   );
 }
