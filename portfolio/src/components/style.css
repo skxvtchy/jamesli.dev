@@ -1,8 +1,11 @@
 * {
   background-color: #36393e;
-  align-items: center;
+  align-content: center;
+  text-align: center;
   color: rgba(255, 255, 255, 0.932);
   font-family: monospace;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 html {

@@ -14,8 +14,8 @@ export default function Main() {
         <h1>Resume</h1>
         <embed
           src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf?#zoom=67"
-          width="90%"
-          height="800"
+          width="75%"
+          height="100%"
         ></embed>
       </section>
       <section id="Contact">
