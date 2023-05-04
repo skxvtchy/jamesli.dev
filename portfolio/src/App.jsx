@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 // import {SmoothScroll} from "./scripts.js";
@@ -8,10 +8,16 @@ import Main from "./components/Main";
 // import Contact from "./components/Contact";
 
 export default function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="container">
-      <Navbar />
-      <Main />
+    <div className={darkMode ? "dark" : "light"}>
+      <Navbar darkMode={darkMode} toggleMode={toggleMode} />
+      <Main darkMode={darkMode} />
     </div>
   );
 }
