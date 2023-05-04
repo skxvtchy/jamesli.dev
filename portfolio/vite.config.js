@@ -6,5 +6,13 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "build",
+    rollupOptions: {
+      input: {
+        main: "index.html",
+      },
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
 });
