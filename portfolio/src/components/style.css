@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  padding-bottom: 0;
+
   scroll-behavior: smooth;
 }
 
@@ -27,10 +29,8 @@
 #About,
 #Projects,
 #Contact {
-  width: 100%;
   height: 420px;
-  padding-top: 30px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 #Resume {
