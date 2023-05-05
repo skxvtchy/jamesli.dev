@@ -1,43 +1,53 @@
-.light,
-a:link,
-a:visited,
-a:hover {
+.light a {
+  align-content: right;
+  text-align: right;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.932);
+  color: black;
+  font-size: 130%;
   font-family: monospace;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.dark,
-a {
+.dark a {
+  align-content: right;
+  text-align: right;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.932);
+  color: white;
+  font-size: 130%;
   font-family: monospace;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .navlink {
   font-size: large;
-  /* display: flex; */
   position: relative;
   display: inline-flex;
 }
 
 .mode {
+  font-size: large;
+  align-items: right;
   display: inline-flex;
 }
 
-/*Button css from https://uiverse.io/TimTrayler/quiet-swan-35*/
+/* Button css from https://uiverse.io/TimTrayler/quiet-swan-35 */
 .switch {
   --secondary-container: #8d898d;
   --primary: #313033;
   font-size: 15px;
   position: relative;
-  top: 12px;
+  top: 7px;
   left: 7px;
   display: inline-block;
   width: 3.7em;
   height: 1.8em;
 }
-
 .switch input {
   display: none;
   opacity: 0;

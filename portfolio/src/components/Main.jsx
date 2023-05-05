@@ -1,17 +1,31 @@
 import React from "react";
-import "./style.css";
+import "./Main.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export default function Main({ darkMode }) {
   return (
     <div className={darkMode ? "dark" : "light"}>
       <section id="About">
         <h1>About</h1>
-        <h2> HOLY SHIT MY COCK IS HUGE</h2>
+        <div className="download">
+          <button type="button" className="resume">
+            <a href="/path/to/your/file.pdf" download>
+              Resume
+              <FontAwesomeIcon icon={faDownload} />
+            </a>
+          </button>
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </div>
       </section>
       <section id="Projects">
         <h1>Projects</h1>
       </section>
-      <section id="Resume">
+      {/* <section id="Resume">
         <h1>Resume</h1>
         <div className="resume_pdf">
           <embed
@@ -21,7 +35,7 @@ export default function Main({ darkMode }) {
             height="100%"
           />
         </div>
-      </section>
+      </section> */}
       <section id="Contact">
         <h1 id="Contact">Contact</h1>
       </section>

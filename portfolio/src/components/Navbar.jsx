@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./style.css";
 import "./Navbar.css";
+import "./Main.css";
 
 export default function Navbar({ darkMode, toggleMode }) {
   //scrolls to that section from url
@@ -21,17 +21,20 @@ export default function Navbar({ darkMode, toggleMode }) {
   // const toggleMode = () => {
   //   setDarkMode(!darkMode);
   // };
+
   return (
     <nav>
       <div className={darkMode ? "dark" : "light"}>
         <div className="navlink">
-          <a href="#About">About</a>
+          <a className="Aboutlink" href="#About">
+            About
+          </a>
           <a href="#Projects">Projects</a>
-          <a href="#Resume">Resume</a>
+          {/* <a href="#Resume">Resume</a> */}
           <a href="#Contact">Contact</a>
         </div>
         <div className="mode">
-          <p className="navlink">Dark Mode</p>
+          <a className="navlink">Dark Mode</a>
           <label className="switch">
             <input type="checkbox" id="toggleSwitch" onClick={toggleMode} />
             <span className="slider"></span>
