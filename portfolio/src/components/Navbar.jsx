@@ -34,7 +34,7 @@ export default function Navbar({ darkMode, toggleMode }) {
           <a href="#Contact">Contact</a>
         </div>
         <div className="mode">
-          <a className="navlink">Dark Mode</a>
+          <a className="navlink">Mode</a>
           <label className="switch">
             <input type="checkbox" id="toggleSwitch" onClick={toggleMode} />
             <span className="slider"></span>

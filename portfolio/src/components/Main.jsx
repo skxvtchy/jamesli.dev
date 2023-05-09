@@ -58,14 +58,18 @@ export default function Main({ darkMode }) {
           and analytical skills.
         </p>
         <div className="download">
-          <button type="button" className="click">
+          <button type="button" className="butt">
             <a href="/path/to/your/resume.pdf" download>
               Resume
               <FontAwesomeIcon icon={faDownload} />
             </a>
           </button>
-          <FontAwesomeIcon className="click" icon={faGithub} size="2x" />
-          <FontAwesomeIcon className="click" icon={faLinkedin} size="2x" />
+          <a href="https://github.com/skxvtchy">
+            <FontAwesomeIcon className="click" icon={faGithub} size="2x" />
+          </a>
+          <a href="https://www.linkedin.com/in/jamesli784/">
+            <FontAwesomeIcon className="click" icon={faLinkedin} size="2x" />
+          </a>
         </div>
       </section>
       <section id="Projects">

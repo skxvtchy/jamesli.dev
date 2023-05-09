@@ -20,7 +20,16 @@
   padding-top: -100px;
 } */
 
-.light {
+.download {
+  vertical-align: middle;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 200px;
+}
+
+.dark {
   background-color: #eeeeee;
   color: rgba(0, 0, 0, 0.932);
   font-family: monospace;
@@ -29,7 +38,7 @@
   border: none;
   -webkit-overflow-scrolling: touch;
 }
-.dark {
+.light {
   background-color: #36393e;
   color: rgba(255, 255, 255, 0.932);
   font-family: monospace;
@@ -37,21 +46,12 @@
   margin-left: 0%;
   -webkit-overflow-scrolling: touch;
 }
-/* 
-.download {
+
+/* button {
   position: relative;
-
-
-  justify-content: space-between;
+  z-index: 1;
+  padding-top: -100px;
 } */
-
-.click {
-  font-size: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 @media (min-width: 768px) {
   .click {
@@ -72,7 +72,7 @@
   text-align: center;
   text-decoration: none;
 }
-.dark button {
+.light button {
   border-radius: 50px;
   cursor: pointer;
   border: 1px solid white;
@@ -81,7 +81,7 @@
   padding: 5px;
 }
 
-.light button {
+.dark button {
   border-radius: 50px;
   cursor: pointer;
   border: 1px solid rgb(0, 0, 0);
