@@ -29,9 +29,9 @@ export default function Navbar({ darkMode, toggleMode }) {
           <a className="Aboutlink" href="#About">
             About
           </a>
+          <a href="#Experience">Experience</a>
           <a href="#Projects">Projects</a>
           {/* <a href="#Resume">Resume</a> */}
-          <a href="#Contact">Contact</a>
         </div>
         <div className="mode">
           <a className="navlink">Mode</a>

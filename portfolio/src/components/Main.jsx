@@ -41,7 +41,7 @@ export default function Main({ darkMode }) {
             </mesh>
           </Canvas> 
         </div> */}
-        <Canvas style={{ width: "100vw", height: "60vh" }}>
+        <Canvas style={{ width: "100vw", height: "40vh" }}>
           <mesh className="knot" scale={[1.5, 1.5, 1.5]}>
             <torusKnotGeometry />
             <meshNormalMaterial />
@@ -54,6 +54,10 @@ export default function Main({ darkMode }) {
           serves as a platform for me to showcase my skills, projects, and
           experiences.
         </p>
+        <p style={{ marginTop: "10px", fontSize: "20px" }}>
+          Contact me @ Jamesli784@gmail.com
+        </p>
+        <p>please</p>
         <div className="download">
           <button type="button" className="butt">
             <a href="/path/to/your/resume.pdf" download>
@@ -86,9 +90,6 @@ export default function Main({ darkMode }) {
           />
         </div>
       </section> */}
-      <section id="Contact">
-        <h1 id="Contact">Contact</h1>
-      </section>
     </div>
   );
 }
