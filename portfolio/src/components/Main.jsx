@@ -5,12 +5,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { Canvas, useFrame } from "@react-three/fiber";
+import Experience from "./Experience";
 
 export default function Main({ darkMode }) {
+  // const cubeRef = useRef();
+
+  // useFrame((state, delta) => {
+  //   cubeRef.current.rotation.y += 0.01;
+  // });
   return (
     <div className={darkMode ? "dark" : "light"}>
       <section id="About">
         <h1>About</h1>
+        <div className="box">
+          <Canvas
+            camera={{ position: [0, 0, 40], fov: 20 }}
+            alpha={true}
+            gl={{ clearColor: "rgba(0, 0, 0, 0)" }}
+          >
+            <mesh rotation-y={Math.PI * 0.25} position-y={-3} scale={[5, 5, 5]}>
+              <Experience />
+            </mesh>
+          </Canvas>
+        </div>
         <div className="download">
           <button type="button" className="resume">
             <a href="/path/to/your/file.pdf" download>
@@ -18,8 +36,8 @@ export default function Main({ darkMode }) {
               <FontAwesomeIcon icon={faDownload} />
             </a>
           </button>
-          <FontAwesomeIcon icon={faGithub} size="2x" />
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          <FontAwesomeIcon className="click" icon={faGithub} size="2x" />
+          <FontAwesomeIcon className="click" icon={faLinkedin} size="2x" />
         </div>
       </section>
       <section id="Projects">

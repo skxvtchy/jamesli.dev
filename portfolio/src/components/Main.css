@@ -4,10 +4,21 @@
   padding-bottom: 0;
   padding-top: 0;
   scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+.box {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  /* border-color: black; */
 }
 
 .light {
-  background-color: #d8e6fd;
+  background-color: #dfe2ec;
   color: rgba(0, 0, 0, 0.932);
   font-family: monospace;
   margin-right: 0%;
@@ -24,25 +35,62 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.download {
+  position: relative;
+  margin-top: -250px;
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.click {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .click {
+    justify-content: flex-start;
+  }
+
+  button {
+    margin-right: 20px;
+  }
+}
+
 #About,
 #Projects,
 #Contact {
-  height: 100vh;
-  border: 1px solid black;
+  /* height: 100vh; */
+  /* border: 1px solid black; */
   align-content: center;
   text-align: center;
   text-decoration: none;
 }
-
-fontawesome {
-  font-weight: 100px;
+#About {
+  height: 100vh;
 }
 
-button {
-  border-radius: 30px;
+.dark button {
+  border-radius: 50px;
   cursor: pointer;
   border: 1px solid white;
   background-color: transparent;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.light button {
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: transparent;
+  font-size: 20px;
+  padding: 5px;
+}
+
+fontawesome {
+  font-weight: 100px;
 }
 
 /* #Resume {

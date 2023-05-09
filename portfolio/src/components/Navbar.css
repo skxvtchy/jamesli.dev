@@ -1,25 +1,21 @@
 .light a {
-  align-content: right;
-  text-align: right;
   text-decoration: none;
   color: black;
   font-size: 130%;
   font-family: monospace;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
 .dark a {
-  align-content: right;
-  text-align: right;
   text-decoration: none;
   color: white;
   font-size: 130%;
   font-family: monospace;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -40,9 +36,9 @@
 .switch {
   --secondary-container: #8d898d;
   --primary: #313033;
-  font-size: 15px;
+  font-size: 10px;
   position: relative;
-  top: 7px;
+  top: 12px;
   left: 7px;
   display: inline-block;
   width: 3.7em;
