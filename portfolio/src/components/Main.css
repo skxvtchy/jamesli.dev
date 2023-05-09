@@ -26,9 +26,16 @@
   margin-right: 10px;
   margin-left: 10px;
   padding-top: 20px;
-  padding-bottom: 200px;
+  padding-bottom: 170px;
+  /* justify-content: center; */
 }
 
+.click {
+  vertical-align: bottom;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
 .dark {
   background-color: #eeeeee;
   color: rgba(0, 0, 0, 0.932);
@@ -64,6 +71,7 @@
 }
 
 #About,
+#Experience,
 #Projects,
 #Contact {
   /* height: 100vh; */

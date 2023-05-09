@@ -17,7 +17,9 @@ export default function Main({ darkMode }) {
   return (
     <div className={darkMode ? "dark" : "light"}>
       <section id="About">
-        <h1>About</h1>
+        <h1>---🛠️WELCOME🛠️--- </h1>
+        <h1>☆*ੈ✩‧₊˚ ୧༼ಠ益ಠ༽୨ ˚₊‧✩*ੈ☆</h1>
+
         {/* <div
           style={{
             width: "100vw",
@@ -50,12 +52,7 @@ export default function Main({ darkMode }) {
           student @ the University at Buffalo pursuing a Computer Science B.S. I
           am currently seeking an internship opportunity, and this website
           serves as a platform for me to showcase my skills, projects, and
-          experiences. On this website, you will find my resume, which outlines
-          my education, work experience, and relevant skills. You can also
-          explore my GitHub page, where I have uploaded some of my coding
-          projects. These projects demonstrate my ability to work with different
-          programming languages and frameworks, and showcase my problem-solving
-          and analytical skills.
+          experiences.
         </p>
         <div className="download">
           <button type="button" className="butt">
@@ -71,6 +68,9 @@ export default function Main({ darkMode }) {
             <FontAwesomeIcon className="click" icon={faLinkedin} size="2x" />
           </a>
         </div>
+      </section>
+      <section id="Experience">
+        <h1 id="Experience">Experience</h1>
       </section>
       <section id="Projects">
         <h1>Projects</h1>
