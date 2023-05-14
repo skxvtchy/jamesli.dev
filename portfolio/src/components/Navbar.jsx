@@ -26,9 +26,10 @@ export default function Navbar({ darkMode, toggleMode }) {
     <nav>
       <div className={darkMode ? "dark" : "light"}>
         <div className="navlink">
-          <a className="Aboutlink" href="#About">
+          {/* <a className="Aboutlink" href="#About">
             About
-          </a>
+          </a> */}
+          <a href="#About">About</a>
           <a href="#Experience">Experience</a>
           <a href="#Projects">Projects</a>
           {/* <a href="#Resume">Resume</a> */}

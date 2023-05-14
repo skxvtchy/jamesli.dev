@@ -16,9 +16,9 @@ export default function Main({ darkMode }) {
   // });
   return (
     <div className={darkMode ? "dark" : "light"}>
-      <section id="About">
-        <h1>---🛠️WELCOME🛠️--- </h1>
-        <h1>☆*ੈ✩‧₊˚ ୧༼ಠ益ಠ༽୨ ˚₊‧✩*ੈ☆</h1>
+      <section id="Welcome">
+        <h1>🛠️WELCOME🛠️</h1>
+        <p1 style={{ fontSize: "20px" }}>☆*ੈ✩‧₊˚ ୧༼ಠ益ಠ༽୨ ˚₊‧✩*ੈ☆</p1>
 
         {/* <div
           style={{
@@ -57,7 +57,7 @@ export default function Main({ darkMode }) {
         <p style={{ marginTop: "10px", fontSize: "20px" }}>
           Contact me @ Jamesli784@gmail.com
         </p>
-        <p>please</p>
+        <p>/*Scroll for More*/</p>
         <div className="download">
           <button type="button" className="butt">
             <a href="/path/to/your/resume.pdf" download>
@@ -72,6 +72,9 @@ export default function Main({ darkMode }) {
             <FontAwesomeIcon className="click" icon={faLinkedin} size="2x" />
           </a>
         </div>
+      </section>
+      <section id="About">
+        <h1 id="About">About</h1>
       </section>
       <section id="Experience">
         <h1 id="Experience">Experience</h1>
