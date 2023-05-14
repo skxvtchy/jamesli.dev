@@ -5,6 +5,7 @@
   padding-top: 0;
   scroll-behavior: smooth;
   min-height: 100%;
+  /* border: 1px solid red; */
 }
 
 .download {
@@ -12,10 +13,19 @@
   font-size: 20px;
   margin-right: 10px;
   margin-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 170px;
+  padding-bottom: 30px;
   justify-content: center;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.words {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 30px;
 }
 
 .click {
@@ -108,15 +118,27 @@ body::-webkit-scrollbar-track {
 }
 
 @media (min-width: 768px) {
-  p {
-    margin: 3% auto;
+  .words {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3%;
+    padding-right: 3%;
     max-width: 600px;
   }
 }
 
-/* Add smaller margins on mobile screens */
+/* Add smaller margins on mobile screens  */
 @media (max-width: 767px) {
-  p {
-    margin: 3% 10px;
+  .words {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3%;
+    padding-right: 3%;
   }
+}
+
+.scrollwords {
+  padding-bottom: 30px;
 }

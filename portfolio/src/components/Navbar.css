@@ -102,7 +102,16 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 768px) {
-  .light a {
+  .light .navlink a {
+    font-size: 18px;
+  }
+  .light .navlink {
+    font-size: 18px;
+  }
+  .dark .navlink {
+    font-size: 18px;
+  }
+  .dark .navlink a {
     font-size: 18px;
   }
   .switch {
@@ -117,9 +126,3 @@ input:checked + .slider:before {
     height: 1.8em;
   }
 }
-
-/* @media (max-width: 576px) {
-  a {
-    font-size: 14px;
-  }
-} */

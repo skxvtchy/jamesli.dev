@@ -47,17 +47,13 @@ export default function Main({ darkMode }) {
             <meshNormalMaterial />
           </mesh>
         </Canvas>
-        <p>
+        <p className="words">
           Welcome to my personal website portfolio! My name is James, and I am a
           student @ the University at Buffalo pursuing a Computer Science B.S. I
           am currently seeking an internship opportunity, and this website
           serves as a platform for me to showcase my skills, projects, and
           experiences.
         </p>
-        <p style={{ marginTop: "10px", fontSize: "20px" }}>
-          Contact me @ Jamesli784@gmail.com
-        </p>
-        <p>/*Scroll for More*/</p>
         <div className="download">
           <button type="button" className="butt">
             <a href="/path/to/your/resume.pdf" download>
@@ -72,9 +68,16 @@ export default function Main({ darkMode }) {
             <FontAwesomeIcon className="click" icon={faLinkedin} size="2x" />
           </a>
         </div>
+        <div className="words">
+          <p style={{ fontSize: "20px", padding: "20px" }}>
+            Contact me @ Jamesli784@gmail.com
+          </p>
+          <p className="scrollwords">/*Scroll for More*/</p>
+        </div>
       </section>
       <section id="About">
         <h1 id="About">About</h1>
+        <p>Sup</p>
       </section>
       <section id="Experience">
         <h1 id="Experience">Experience</h1>
