@@ -41,7 +41,7 @@ export default function Main({ darkMode }) {
             </mesh>
           </Canvas> 
         </div> */}
-        <Canvas style={{ width: "100vw", height: "40vh" }}>
+        <Canvas style={{ width: "100vw", height: "35vh" }}>
           <mesh className="knot" scale={[1.5, 1.5, 1.5]}>
             <torusKnotGeometry />
             <meshNormalMaterial />
