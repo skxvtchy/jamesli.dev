@@ -152,3 +152,7 @@ body::-webkit-scrollbar-track {
     padding-right: 3%;
   }
 }
+
+h1 {
+  font-size: 35px;
+}

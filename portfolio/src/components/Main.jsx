@@ -81,9 +81,75 @@ export default function Main({ darkMode }) {
       </section>
       <section id="Experience">
         <h1 id="Experience">Experience</h1>
+        <h2>Interactive Map</h2>
+        {/* img */}
+        <div className="words">
+          <p>
+            This map project was built using HTML, CSS, JavaScript, and
+            Photoshop. The project is designed to showcase a custom map of a
+            specific location, including markers, labels, and custom terrain.
+          </p>
+          <p>Features</p>
+          <p>- Custom background image and terrain</p>
+          <p>- Interactive markers and labels</p>
+          <p>- User-friendly interface</p>
+          <p>Languages</p>
+          <p>-HTML</p>
+          <p>-JavaScript</p>
+          <p>-CSS</p>
+          <a href="https://github.com/skxvtchy/Interactive_Map">
+            Github
+            <FontAwesomeIcon
+              className="click"
+              icon={faGithub}
+              size="2x"
+              style={{ fontSize: "35px" }}
+            />
+          </a>
+        </div>
       </section>
       <section id="Projects">
         <h1>Projects</h1>
+        <h2>Personal Portfolio</h2>
+        <div className="words">
+          <p>
+            This is a personal portfolio website built using Reactjs and
+            Threejs. The website showcases my personal projects, skills, and
+            experiences.
+          </p>
+          <p>Languages</p>
+          <p>-React JSX</p>
+          <p>-JavaScript</p>
+          <p>-CSS</p>
+          <p>FrameWorks</p>
+          <p>-Reactjs</p>
+          <p>-Threejs</p>
+          <a href="https://github.com/skxvtchy/jamesli.dev">
+            Github
+            <FontAwesomeIcon
+              className="click"
+              icon={faGithub}
+              size="2x"
+              style={{ fontSize: "35px" }}
+            />
+          </a>
+        </div>
+
+        <h2>Instant Chat Messenger</h2>
+        <div className="words">
+          <p>sup</p>
+          <p>Languages</p>
+          <p>-C</p>
+          <a href="">
+            Github
+            <FontAwesomeIcon
+              className="click"
+              icon={faGithub}
+              size="2x"
+              style={{ fontSize: "35px" }}
+            />
+          </a>
+        </div>
       </section>
       {/* <section id="Resume">
         <h1>Resume</h1>
