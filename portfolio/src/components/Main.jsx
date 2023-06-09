@@ -56,7 +56,7 @@ export default function Main({ darkMode }) {
         </p>
         <div className="download">
           <button type="button" className="butt">
-            <a href="assets/Resume.pdf" download>
+            <a href="assets/Resume.pdf" download="Resume.pdf">
               Resume
               <FontAwesomeIcon icon={faDownload} />
             </a>
