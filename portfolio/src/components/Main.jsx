@@ -58,7 +58,7 @@ export default function Main({ darkMode }) {
           <button type="button" className="butt">
             <a href="assets/Resume.pdf" download="Resume.pdf">
               Resume
-              <FontAwesomeIcon icon={faDownload} />
+              {/* <FontAwesomeIcon icon={faDownload} /> */}
             </a>
           </button>
           <a href="https://github.com/skxvtchy">
