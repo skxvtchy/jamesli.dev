@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Home from "@/components/Home";
+import InfiniteScroll from "@/components/InfiniteScroll";
 import Navbar from "@/components/Navbar";
 import NextLinks from "@/components/NextLinks";
 import Dock from "@/components/Dock";
@@ -12,6 +13,7 @@ export default function App() {
       <Navbar />
       {/* <NextLinks /> */}
       <Projects />
+      <InfiniteScroll />
       <div className="fixed bottom-4 right-4">
         <Dock />
       </div>
