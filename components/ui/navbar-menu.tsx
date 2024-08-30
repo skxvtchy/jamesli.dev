@@ -67,7 +67,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-input flex justify-between items-center px-4"
+      className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-50 backdrop-blur-md border-b border-gray-200 shadow-input flex justify-between items-center px-4"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16 w-full">
         <div className="flex gap-10 items-center">{children}</div>
