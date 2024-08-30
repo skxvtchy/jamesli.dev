@@ -1,0 +1,77 @@
+.mogwarts-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d1ffbd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+  /* Centering the container vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Or a fixed width depending on your design preference */
+}
+
+.mogwarts-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Center button horizontally */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.background {
+  background-image: url("../public/moggers.jpg"); /* Update with your image path */
+  background-size: 8%; /* Smaller size for repeating, adjust as needed */
+  background-position: center; /* Center the background image */
+  background-repeat: repeat; /* Repeat the image to fill the space */
+  min-height: 100vh; /* Minimum height to cover the viewport height */
+}
+
+html,
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+}
