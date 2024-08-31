@@ -1,11 +1,7 @@
 "use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
-
 import { toast } from "sonner";
-
-import LiveDot from "./ui/live-dot";
-
 import {
   AlertDialog,
   AlertDialogAction,
@@ -17,9 +13,13 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+
+import LiveDot from "./ui/live-dot";
+import { LinkPreview } from "@/components/ui/link-preview";
+
 import { motion } from "framer-motion";
 
-const Home = () => {
+const FunButtons = () => {
   const currentDate = new Date();
 
   // Format the date to the desired format
@@ -38,8 +38,8 @@ const Home = () => {
   });
 
   return (
-    <div className="min-h-[50vh]">
-      <div className="flex items-center justify-center pb-10">
+    <div className="min-h-[20vh]">
+      <div className="flex items-center justify-center pb-12">
         <div className="flex items-center space-x-1">
           <LiveDot />
           <span className="text-lg font-medium">
@@ -63,7 +63,9 @@ const Home = () => {
         Show Toast
       </Button>
 
-      <Button className="mx-3">Link to this website</Button>
+      <LinkPreview url="https://jamesli.dev/" className="font-bold">
+        <Button className="mx-3">Link to this website</Button>
+      </LinkPreview>
 
       <AlertDialog>
         <AlertDialogTrigger asChild>
@@ -88,4 +90,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default FunButtons;
