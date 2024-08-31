@@ -83,7 +83,7 @@ export const LinkPreview = ({
             width={width}
             height={height}
             quality={quality}
-            layout={layout}
+            layout={"fixed"}
             priority={true}
             alt="hidden image"
           />
@@ -141,7 +141,7 @@ export const LinkPreview = ({
                     width={width}
                     height={height}
                     quality={quality}
-                    layout={layout}
+                    layout={"fixed"}
                     priority={true}
                     className="rounded-lg"
                     alt="preview image"
