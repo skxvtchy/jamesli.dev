@@ -5,8 +5,6 @@ const nextConfig = {
       "api.microlink.io", // Microlink Image Preview
     ],
   },
-  output: "export",
-  basePath: "/jamesli.dev",
 };
 
 module.exports = nextConfig;
