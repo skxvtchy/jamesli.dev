@@ -11,13 +11,13 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 const Dock: React.FC = () => {
   const links = [
-    {
-      title: "Discord",
-      icon: (
-        <IconBrandDiscord className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    // {
+    //   title: "Discord",
+    //   icon: (
+    //     <IconBrandDiscord className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "#",
+    // },
     {
       title: "GitHub",
       icon: (
