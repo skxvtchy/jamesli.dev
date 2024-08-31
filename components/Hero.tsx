@@ -34,7 +34,7 @@ const Hero = () => {
   const dumbQuoteImade = `Only when you suffer can you appreciate the mundane`;
   return (
     <div className="min-h-[30vh] pt-6 ">
-      <div className="lg:pb-12 flex justify-center text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+      <div className="pb-8 lg:pb-12 flex justify-center text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         <FlipWords words={hello} />
       </div>
       <div className=" mb-12 flex flex-col md:flex-row items-center justify-center w-100">
