@@ -37,7 +37,6 @@ const Hero = () => {
       <div className="lg:pb-12 flex justify-center text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         <FlipWords words={hello} />
       </div>
-
       <div className=" mb-12 flex flex-col md:flex-row items-center justify-center w-100">
         {/* <div>
           <h1 className=" sm:mb-8 text-center text-4xl md:text-4xl font-semibold max-w-none sm:w-96 z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
@@ -87,13 +86,14 @@ const Hero = () => {
               >
                 Ascii Art Credits →
               </CardItem>
+
               <CardItem
                 translateZ={20}
                 as={Link}
                 href="https://github.com/skxvtchy"
                 className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
               >
-                My github
+                @skxvtchy
               </CardItem>
             </div>
           </CardBody>

@@ -51,7 +51,7 @@ const FunButtons = () => {
       <Button
         variant="outline"
         onClick={() =>
-          toast("WAIT WHAT TIME IS IT!!!", {
+          toast("WAIT! What time is it?", {
             description: `${formattedDate} at ${formattedTime}`,
             action: {
               label: "Okay",

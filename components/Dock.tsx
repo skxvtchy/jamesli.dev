@@ -7,6 +7,7 @@ import {
   IconMail,
   IconFileDescription,
 } from "@tabler/icons-react";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 const Dock: React.FC = () => {
   const links = [
@@ -20,7 +21,9 @@ const Dock: React.FC = () => {
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <LinkPreview url="https://github.com/skxvtchy" className="font-bold">
+          <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        </LinkPreview>
       ),
       href: "https://github.com/skxvtchy",
     },
@@ -43,7 +46,7 @@ const Dock: React.FC = () => {
       icon: (
         <IconFileDescription className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/resume.pdf",
     },
   ];
   return (

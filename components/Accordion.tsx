@@ -13,31 +13,28 @@ const AccordionComp = () => {
       {/* Wrapper div to control the accordion width */}
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionTrigger>
+            Why did the computer cross the road?
+          </AccordionTrigger>
           <AccordionContent>
             <div className="max-w-full">
-              {" "}
               {/* Inner div to prevent width change */}
-              Yes. It adheres to the WAI-ARIA design pattern.
+              To get to the other site 🤖
             </div>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>Is it styled?</AccordionTrigger>
+          <AccordionTrigger>Why don't keyboards sleep?</AccordionTrigger>
           <AccordionContent>
-            <div className="max-w-full">
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
-            </div>
+            <div className="max-w-full">Because they have two shifts ⌨️</div>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Is it animated?</AccordionTrigger>
+          <AccordionTrigger>
+            What’s a computer’s favorite beat?
+          </AccordionTrigger>
           <AccordionContent>
-            <div className="max-w-full">
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
-            </div>
+            <div className="max-w-full">An algorithm 🎶</div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
