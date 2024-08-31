@@ -22,21 +22,21 @@ const Dock: React.FC = () => {
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/skxvtchy",
     },
     {
       title: "Email",
       icon: (
         <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "mailto:Jamesli784@gmail.com",
     },
     {
       title: "Linkedin",
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/jamesli784/",
     },
     {
       title: "Resume",

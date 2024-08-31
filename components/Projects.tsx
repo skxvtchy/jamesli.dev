@@ -3,7 +3,11 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+import { LinkPreview } from "@/components/ui/link-preview";
+
 import {
+  IconCode,
   IconHtml,
   IconBrandPython,
   IconBrandTypescript,
@@ -26,7 +30,14 @@ import {
 
 const Projects: React.FC = () => {
   return (
-    <div className="py-16">
+    <div className="pb-8 px-4">
+      <div className="flex items-center justify-center py-8">
+        <div className="flex items-center space-x-1">
+          <IconCode className="h-6 w-6" />
+          <span className="text-lg font-medium">Coding Projects</span>
+        </div>
+      </div>
+
       <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
           <BentoGridItem
@@ -35,6 +46,7 @@ const Projects: React.FC = () => {
             description={item.description}
             header={item.header}
             icon={item.icon}
+            link={item.link}
             className={i === 0 || i === 5 ? "md:col-span-2" : ""}
           />
         ))}
@@ -54,14 +66,14 @@ const Skeleton: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
 const items = [
   {
     title: "LINKR - Mobile iOS App",
+    link: "https://linkrapp.com/",
     description:
       "User registration with AWS Cognito and SES, DynamoDB and S3 accessed via GraphQL for real-time messaging through subscriptions, across the Expo-based application.",
     header: (
       <Skeleton>
         <Image
-          src="/apex.png"
+          src="/linkr.png"
           alt="Project 4 Image"
-          layout="responsive"
           width={600}
           height={400}
           className="rounded-xl object-cover"
@@ -83,14 +95,14 @@ const items = [
   },
   {
     title: "Chat Messaging Webapp",
+    link: "https://www.linkedin.com/company/etech-7/jobs/",
     description:
       "WebSockets, JWT authentication, Data buffering and Docker containerization.",
     header: (
       <Skeleton>
         <Image
-          src="/apex.png"
+          src="/cse312.png"
           alt="Project 4 Image"
-          layout="responsive"
           width={600}
           height={400}
           className="rounded-xl object-cover"
@@ -110,14 +122,14 @@ const items = [
   },
   {
     title: "Saute - Recipe WebApp",
+    link: "https://webdev.cse.buffalo.edu/hci/teams/ben10",
     description:
       "REST API endpoints with Swagger API, Dynamic components, and Task management Trello",
     header: (
       <Skeleton>
         <Image
-          src="/apex.png"
+          src="/saute.png"
           alt="Project 4 Image"
-          layout="responsive"
           width={600}
           height={400}
           className="rounded-xl object-cover"
@@ -137,14 +149,14 @@ const items = [
   },
   {
     title: "Pern Stack - Todo List",
+    link: "https://github.com/skxvtchy/chat-messaging",
     description:
       "PostgreSQL for task storage, Express.js to handle API requests, Dynamic frontend.",
     header: (
       <Skeleton>
         <Image
-          src="/apex.png"
+          src="/pern.png"
           alt="Project 4 Image"
-          layout="responsive"
           width={600}
           height={400}
           className="rounded-xl object-cover"
@@ -164,6 +176,7 @@ const items = [
   },
   {
     title: "Linear Regression on Salaries",
+    link: "#",
     description:
       "Preprocessed data using Pandas and NumPy, Sklearn to create Model, Matlab chart creation",
     header: (
@@ -171,7 +184,6 @@ const items = [
         <Image
           src="/apex.png"
           alt="Project 4 Image"
-          layout="responsive"
           width={600}
           height={400}
           className="rounded-xl object-cover"
