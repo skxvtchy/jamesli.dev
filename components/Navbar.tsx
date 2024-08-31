@@ -43,20 +43,18 @@ function Navbar({ className }: { className?: string }) {
           </MenuItem>
         </Link> */}
 
-        <Link href="/web-dev">
-          <MenuItem
-            setActive={setActive}
-            active={active}
-            item="Experience"
-            icon={
-              <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
-            }
-          >
-            <div className="flex flex-col space-y-4 text-sm p-2">
-              <HoveredLink href="">I need some :(</HoveredLink>
-            </div>
-          </MenuItem>
-        </Link>
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Experience"
+          icon={
+            <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
+          }
+        >
+          <div className="flex flex-col space-y-4 text-sm p-2">
+            <HoveredLink href="#">I need some :(</HoveredLink>
+          </div>
+        </MenuItem>
         <MenuItem
           setActive={setActive}
           active={active}
