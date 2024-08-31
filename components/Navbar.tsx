@@ -70,7 +70,7 @@ function Navbar({ className }: { className?: string }) {
               title="LINKR"
               // href="https://linkrapp.com/"
               href="#"
-              src="/apex.png"
+              src="/linkr.png"
               description="Wasted too many hours... scroll down to see it"
             />
           </div>
