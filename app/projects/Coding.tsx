@@ -1,10 +1,11 @@
 import { cn } from "@/lib/utils";
 import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../../components/ui/bento-grid";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
 
 import {
   IconCode,
@@ -28,18 +29,42 @@ import {
   IconNavigation,
 } from "@tabler/icons-react";
 
-const Projects: React.FC = () => {
+const Coding: React.FC = () => {
+  const word = `Featured`;
+  const ai_projects = `AI/ML`;
+
   return (
     <div className="pb-8 px-4">
       <div className="flex items-center justify-center py-8">
         <div className="flex items-center space-x-1">
-          <IconCode className="h-6 w-6" />
-          <span className="text-lg font-medium">Coding Projects</span>
+          {/* <IconCode className="h-7 w-7" /> */}
+          <TextGenerateEffect className="font-normal" words={word} />
         </div>
       </div>
 
       <BentoGrid className="max-w-4xl mx-auto">
-        {items.map((item, i) => (
+        {highlighted.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            icon={item.icon}
+            link={item.link}
+            className={i === 0 || i === 5 ? "md:col-span-2" : ""}
+          />
+        ))}
+      </BentoGrid>
+
+      <div className="flex items-center justify-center pt-24 pb-8">
+        <div className="flex items-center space-x-1">
+          {/* <IconCode className="h-7 w-7" /> */}
+          <TextGenerateEffect className="font-normal" words={ai_projects} />
+        </div>
+      </div>
+
+      <BentoGrid className="max-w-4xl mx-auto">
+        {ai.map((item, i) => (
           <BentoGridItem
             key={i}
             title={item.title}
@@ -55,7 +80,7 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default Coding;
 
 const Skeleton: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
@@ -63,7 +88,7 @@ const Skeleton: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
   </div>
 );
 
-const items = [
+const highlighted = [
   {
     title: "LINKR - Mobile iOS App",
     link: "https://linkrapp.com/",
@@ -194,6 +219,36 @@ const items = [
       <div className="flex space-x-2">
         <IconBrandPython className="h-5 w-5 text-neutral-500" />
         <IconAi className="h-5 w-5 text-neutral-500" />
+      </div>
+    ),
+  },
+];
+
+const ai = [
+  {
+    title: "Chat Messaging Webapp",
+    link: "https://www.linkedin.com/company/etech-7/jobs/",
+    description:
+      "WebSockets, JWT authentication, Data buffering and Docker containerization.",
+    header: (
+      <Skeleton>
+        <Image
+          src="/cse312.png"
+          alt="Project 4 Image"
+          width={600}
+          height={400}
+          className="rounded-xl object-cover"
+        />
+      </Skeleton>
+    ),
+    icon: (
+      <div className="flex space-x-2">
+        <IconHtml className="h-5 w-5 text-neutral-500" />
+        <IconBrandJavascript className="h-5 w-5 text-neutral-500" />
+        <IconBrandCss3 className="h-5 w-5 text-neutral-500" />
+        <IconBrandPython className="h-5 w-5 text-neutral-500" />
+        <IconBrandMongodb className="h-5 w-5 text-neutral-500" />
+        <IconBrandDocker className="h-5 w-5 text-neutral-500" />
       </div>
     ),
   },

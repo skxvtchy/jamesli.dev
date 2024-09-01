@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FloatingDock } from "./ui/floating-dock";
+import { FloatingDock } from "../ui/floating-dock";
 import {
   IconBrandDiscord,
   IconBrandGithub,
@@ -52,10 +52,12 @@ const Dock: React.FC = () => {
     },
   ];
   return (
-    <FloatingDock
-      // mobileClassName="translate-y-20" // only for demo, remove for production
-      items={links}
-    />
+    <div className="fixed bottom-4 right-4">
+      <FloatingDock
+        // mobileClassName="translate-y-20" // only for demo, remove for production
+        items={links}
+      />
+    </div>
   );
 };
 

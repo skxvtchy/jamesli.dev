@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import Link from "next/link";
 
 import { IconHome, IconMessage, IconUser, IconCode } from "@tabler/icons-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 import {
   Dialog,
   DialogContent,
@@ -16,9 +16,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
+} from "../ui/dialog";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -31,7 +31,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "./ui/form";
+} from "../ui/form";
 
 const NavbarMenu: React.FC = () => {
   return (
@@ -96,38 +96,51 @@ function Navbar({ className }: { className?: string }) {
           </DialogContent>
         </Dialog>
 
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          item="Experience"
-          icon={
-            <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
-          }
-        >
-          <div className="flex flex-col space-y-4 text-sm p-2">
-            <HoveredLink href="#">I need some :(</HoveredLink>
-          </div>
-        </MenuItem>
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          item="Projects"
-          icon={
-            <IconCode className="h-4 w-4 text-neutral-500 dark:text-white" />
-          }
-        >
-          <div className="  text-sm grid grid-cols-1 gap-10 p-4">
-            {/* use this div for 2 columns of items */}
-            {/* <div className="  text-sm grid grid-cols-2 gap-10 p-4"> */}
-            <ProductItem
-              title="LINKR"
-              // href="https://linkrapp.com/"
-              href="#"
-              src="/linkr.png"
-              description="Wasted too many hours... scroll down to see it"
-            />
-          </div>
-        </MenuItem>
+        <Link href="/">
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Home"
+            icon={
+              <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
+            }
+          >
+            <div className="flex flex-col space-y-4 text-sm p-2">
+              <HoveredLink href="#">Lock in</HoveredLink>
+            </div>
+          </MenuItem>
+        </Link>
+
+        <Link href="/projects">
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Projects"
+            icon={
+              <IconCode className="h-4 w-4 text-neutral-500 dark:text-white" />
+            }
+          >
+            <div className="  text-sm grid grid-cols-1 gap-10 p-4">
+              {/* use this div for 2 columns of items */}
+              {/* <div className="  text-sm grid grid-cols-2 gap-10 p-4"> */}
+              <ProductItem
+                title="LINKR"
+                // href="https://linkrapp.com/"
+                href="#"
+                src="/linkr.png"
+                description="Mobile events app"
+              />
+              <ProductItem
+                title="Stock Forecast"
+                // href="https://linkrapp.com/"
+                href="#"
+                src="/apex.png"
+                description="Sentiment analysis"
+              />
+            </div>
+          </MenuItem>
+        </Link>
+
         <MenuItem
           setActive={setActive}
           active={active}

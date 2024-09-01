@@ -19,13 +19,13 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "./ui/command";
+} from "../ui/command";
 
 import { IconSearch } from "@tabler/icons-react";
 
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
-const CommandDialogComp = () => {
+const Search = () => {
   const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
@@ -59,34 +59,33 @@ const CommandDialogComp = () => {
         </kbd>
       </Button>
 
-        <CommandDialog open={open} onOpenChange={setOpen}>
-          <CommandInput placeholder="Type a command or search..." />
-          <CommandList>
-            <CommandEmpty>No results found.</CommandEmpty>
-            <CommandGroup heading="Suggestions">
-              <CommandItem disabled>
-                <Smile className="mr-2 h-4 w-4" />
-                <span>There's nothing to search. items don't work</span>
-              </CommandItem>
-            </CommandGroup>
-            <CommandSeparator />
-            <CommandGroup heading="Settings">
-              <CommandItem>
-                <User className="mr-2 h-4 w-4" />
-                <span>Profile</span>
-                <CommandShortcut>⌘P</CommandShortcut>
-              </CommandItem>
-              <CommandItem disabled>
-                <CreditCard className="mr-2 h-4 w-4" />
-                <span>Billing</span>
-                <CommandShortcut>⌘B</CommandShortcut>
-              </CommandItem>
-            </CommandGroup>
-          </CommandList>
-        </CommandDialog>
-      
+      <CommandDialog open={open} onOpenChange={setOpen}>
+        <CommandInput placeholder="Type a command or search..." />
+        <CommandList>
+          <CommandEmpty>No results found.</CommandEmpty>
+          <CommandGroup heading="Suggestions">
+            <CommandItem disabled>
+              <Smile className="mr-2 h-4 w-4" />
+              <span>There's nothing to search. items don't work</span>
+            </CommandItem>
+          </CommandGroup>
+          <CommandSeparator />
+          <CommandGroup heading="Settings">
+            <CommandItem>
+              <User className="mr-2 h-4 w-4" />
+              <span>Profile</span>
+              <CommandShortcut>⌘P</CommandShortcut>
+            </CommandItem>
+            <CommandItem disabled>
+              <CreditCard className="mr-2 h-4 w-4" />
+              <span>Billing</span>
+              <CommandShortcut>⌘B</CommandShortcut>
+            </CommandItem>
+          </CommandGroup>
+        </CommandList>
+      </CommandDialog>
     </>
   );
 };
 
-export default CommandDialogComp;
+export default Search;
