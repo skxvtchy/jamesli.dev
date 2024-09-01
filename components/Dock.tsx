@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FloatingDock } from "./ui/floating-dock";
 import {
@@ -6,24 +8,24 @@ import {
   IconBrandLinkedin,
   IconMail,
   IconFileDescription,
+  IconUser,
+  IconLink,
 } from "@tabler/icons-react";
-import { LinkPreview } from "@/components/ui/link-preview";
+// import { LinkPreview } from "@/components/ui/link-preview";
 
 const Dock: React.FC = () => {
   const links = [
-    // {
-    //   title: "Discord",
-    //   icon: (
-    //     <IconBrandDiscord className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    //   ),
-    //   href: "#",
-    // },
+    {
+      title: "Linkr",
+      icon: (
+        <IconLink className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://linkrapp.com/",
+    },
     {
       title: "GitHub",
       icon: (
-        <LinkPreview url="https://github.com/skxvtchy" className="font-bold">
-          <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        </LinkPreview>
+        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://github.com/skxvtchy",
     },
