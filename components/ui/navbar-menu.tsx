@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/legacy/image";
 
-import CommandDialog from "@/components/CommandDialog";
+import Search from "@/components/navigation/Search";
 import { IconSearch } from "@tabler/icons-react";
 
 const transition = {
@@ -77,12 +77,13 @@ export const Menu = ({
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between h-14 w-full">
         <div className="flex gap-10 items-center">{children}</div>
-
+        {/* span shown when closed but dont have a link for search  */}
         {/* <span className="block sm:hidden">
           <IconSearch className="h-4 w-4 text-gray-600" />
         </span> */}
         <span className="hidden sm:block">
-          <CommandDialog />
+          {/* for search cmd + k */}
+          <Search />
         </span>
       </div>
     </nav>

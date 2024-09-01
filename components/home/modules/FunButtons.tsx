@@ -14,7 +14,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 
-import LiveDot from "./ui/live-dot";
+import LiveDot from "../../ui/live-dot";
 import { LinkPreview } from "@/components/ui/link-preview";
 
 import { motion } from "framer-motion";
