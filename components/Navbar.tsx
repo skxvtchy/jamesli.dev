@@ -43,25 +43,20 @@ const NavbarMenu: React.FC = () => {
 export default NavbarMenu;
 
 function Navbar({ className }: { className?: string }) {
-  const [nctive, setnctive] = useState<string | null>(null);
   const [active, setActive] = useState<string | null>(null);
+  const [value, setValue] = useState<string>("");
+  const [error, setError] = useState<string>("");
 
-  const formSchema = z.object({
-    password: z.string(),
-  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+    // console.log(e.target.value); // prints in browser console
+  };
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      password: "",
-    },
-  });
-
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values); // prints this in browser console
-    setnctive(values.password);
-  }
+  const handleClick = () => {
+    if (value != "*qbct") {
+      setError("Incorrect password");
+    }
+  };
 
   return (
     <div
@@ -80,35 +75,24 @@ function Navbar({ className }: { className?: string }) {
 
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
-              <DialogTitle>Welcome {nctive}</DialogTitle>
+              <DialogTitle>Welcome</DialogTitle>
               <DialogDescription>
                 Entry exclusive to the creator
               </DialogDescription>
             </DialogHeader>
 
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-4"
-              >
-                <FormField
-                  control={form.control}
-                  name="password"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input placeholder="Password" {...field} />
-                      </FormControl>
+            <Input
+              type="password"
+              value={value}
+              placeholder="Password"
+              onChange={handleChange}
+            />
 
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <DialogFooter>
-                  <Button type="submit">Submit</Button>
-                </DialogFooter>
-              </form>
-            </Form>
+            <DialogFooter>
+              <Button type="submit" onClick={handleClick}>
+                Submit
+              </Button>
+            </DialogFooter>
           </DialogContent>
         </Dialog>
 
