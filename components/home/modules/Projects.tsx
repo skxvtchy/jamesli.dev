@@ -155,7 +155,7 @@ const items = [
     title: "Sentiment Analyis",
     link: "https://github.com/skxvtchy/sentiment_analysis",
     description:
-      "ProsusAI/finbert model with pytorch to create locally hosted fastApi",
+      "ProsusAI/finbert model with pytorch to create locally hosted sentiment analysis with fastApi",
     header: (
       <Skeleton>
         <Image

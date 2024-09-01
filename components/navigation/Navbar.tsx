@@ -127,7 +127,7 @@ function Navbar({ className }: { className?: string }) {
               <ProductItem
                 title="LINKR"
                 href="https://linkrapp.com/"
-                src="/linkr.png"
+                src="/project_images/linkr.png"
                 description="Mobile events app"
               />
               <ProductItem
