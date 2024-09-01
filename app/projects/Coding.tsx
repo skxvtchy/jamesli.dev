@@ -97,7 +97,7 @@ const highlighted = [
     header: (
       <Skeleton>
         <Image
-          src="/linkr.png"
+          src="/project_images/linkr.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -126,7 +126,7 @@ const highlighted = [
     header: (
       <Skeleton>
         <Image
-          src="/cse312.png"
+          src="/project_images/cse312.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -153,7 +153,7 @@ const highlighted = [
     header: (
       <Skeleton>
         <Image
-          src="/saute.png"
+          src="/project_images/saute.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -180,7 +180,7 @@ const highlighted = [
     header: (
       <Skeleton>
         <Image
-          src="/pern.png"
+          src="/project_images/pern.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -233,7 +233,7 @@ const ai = [
     header: (
       <Skeleton>
         <Image
-          src="/cse312.png"
+          src="/project_images/cse312.png"
           alt="Project 4 Image"
           width={600}
           height={400}

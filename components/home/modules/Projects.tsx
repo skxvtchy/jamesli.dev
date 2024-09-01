@@ -21,6 +21,7 @@ import {
   IconFileTypeJsx,
   IconAi,
   IconApi,
+  IconFlame,
   IconDatabase,
   IconFileTypeJs,
   IconBrandGraphql,
@@ -75,7 +76,7 @@ const items = [
     header: (
       <Skeleton>
         <Image
-          src="/linkr.png"
+          src="/project_images/linkr.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -104,7 +105,7 @@ const items = [
     header: (
       <Skeleton>
         <Image
-          src="/cse312.png"
+          src="/project_images/cse312.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -131,7 +132,7 @@ const items = [
     header: (
       <Skeleton>
         <Image
-          src="/saute.png"
+          src="/project_images/saute.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -151,14 +152,14 @@ const items = [
     ),
   },
   {
-    title: "Pern Stack - Todo List",
-    link: "https://github.com/skxvtchy/chat-messaging",
+    title: "Sentiment Analyis",
+    link: "https://github.com/skxvtchy/sentiment_analysis",
     description:
-      "PostgreSQL for task storage, Express.js to handle API requests, Dynamic frontend.",
+      "ProsusAI/finbert model with pytorch to create locally hosted fastApi",
     header: (
       <Skeleton>
         <Image
-          src="/pern.png"
+          src="/project_images/sentiment_ai.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -168,18 +169,16 @@ const items = [
     ),
     icon: (
       <div className="flex space-x-2">
-        <IconBrandReact className="h-5 w-5 text-neutral-500" />
-        <IconFileTypeJs className="h-5 w-5 text-neutral-500" />
-        <IconFileTypeJsx className="h-5 w-5 text-neutral-500" />
-        <IconBrandCss3 className="h-5 w-5 text-neutral-500" />
-        <IconDatabase className="h-5 w-5 text-neutral-500" />
-        <IconBrandNodejs className="h-5 w-5 text-neutral-500" />
+        <IconBrandPython className="h-5 w-5 text-neutral-500" />
+        <IconFlame className="h-5 w-5 text-neutral-500" />
+        <IconApi className="h-5 w-5 text-neutral-500" />
+        <IconAi className="h-5 w-5 text-neutral-500" />
       </div>
     ),
   },
   {
     title: "Linear Regression on Salaries",
-    link: "#",
+    link: "https://github.com/skxvtchy/sentiment_analysis",
     description:
       "Preprocessed data using Pandas and NumPy, Sklearn to create Model, Matlab chart creation",
     header: (

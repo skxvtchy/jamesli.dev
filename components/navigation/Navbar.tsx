@@ -111,7 +111,8 @@ function Navbar({ className }: { className?: string }) {
           </MenuItem>
         </Link>
 
-        <Link href="/projects">
+        {/* <Link href="/projects"> */}
+        <Link href="/null">
           <MenuItem
             setActive={setActive}
             active={active}
@@ -125,17 +126,15 @@ function Navbar({ className }: { className?: string }) {
               {/* <div className="  text-sm grid grid-cols-2 gap-10 p-4"> */}
               <ProductItem
                 title="LINKR"
-                // href="https://linkrapp.com/"
-                href="#"
+                href="https://linkrapp.com/"
                 src="/linkr.png"
                 description="Mobile events app"
               />
               <ProductItem
-                title="Stock Forecast"
-                // href="https://linkrapp.com/"
-                href="#"
-                src="/apex.png"
-                description="Sentiment analysis"
+                title="Sentiment Analysis"
+                href="https://github.com/skxvtchy/sentiment_analysis"
+                src="/project_images/sentiment_ai.png"
+                description="Finbert Sentiment"
               />
             </div>
           </MenuItem>
