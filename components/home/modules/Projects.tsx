@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
             header={item.header}
             icon={item.icon}
             link={item.link}
-            className={i === 0 || i === 5 ? "md:col-span-2" : ""}
+            className={i === 0 || i === 5 ? "md:col-span-2 " : ""}
           />
         ))}
       </BentoGrid>
