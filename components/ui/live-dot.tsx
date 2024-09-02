@@ -10,7 +10,7 @@ const LiveDot: React.FC<LiveDotProps> = ({ className }) => {
   return (
     <div className={className}>
       <div className="flex items-center justify-center w-5 h-5 bg-gradient-radial from-green-200 to-transparent rounded-full">
-        <div className="flex items-center justify-center w-3 h-3 bg-gradient-radial from-green-300 to-transparent rounded-full">
+        <div className="flex items-center justify-center w-4 h-4 bg-gradient-radial from-green-300 to-transparent rounded-full">
           <motion.div
             className="w-3 h-3 bg-green-500 rounded-full shadow-lg"
             animate={{
