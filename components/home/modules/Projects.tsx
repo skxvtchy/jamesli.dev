@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
             header={item.header}
             icon={item.icon}
             link={item.link}
-            className={i === 0 || i === 5 ? "md:col-span-2" : ""}
+            className={i === 0 || i === 5 ? "md:col-span-2 " : ""}
           />
         ))}
       </BentoGrid>
@@ -155,7 +155,7 @@ const items = [
     title: "Sentiment Analyis",
     link: "https://github.com/skxvtchy/sentiment_analysis",
     description:
-      "ProsusAI/finbert model with pytorch to create locally hosted fastApi",
+      "ProsusAI/finbert model with pytorch to create locally hosted sentiment analysis with fastApi",
     header: (
       <Skeleton>
         <Image
