@@ -175,9 +175,9 @@ const highlighted = [
   },
   {
     title: "Simple Blockchain",
-    link: "",
+    link: "https://github.com/skxvtchy/simple_blockchain",
     description:
-      "PostgreSQL for task storage, Express.js to handle API requests, Dynamic frontend.",
+      "Simple example of the block chain with sh256 hashing on blocks and keys",
     header: (
       <Skeleton>
         <Image
@@ -199,7 +199,7 @@ const highlighted = [
   },
   {
     title: "Pern Stack - Todo List",
-    link: "https://github.com/skxvtchy/chat-messaging",
+    link: "https://github.com/skxvtchy/PERN-todo",
     description:
       "PostgreSQL for task storage, Express.js to handle API requests, Dynamic frontend.",
     header: (
