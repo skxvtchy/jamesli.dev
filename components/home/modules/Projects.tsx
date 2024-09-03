@@ -177,14 +177,14 @@ const items = [
     ),
   },
   {
-    title: "Linear Regression on Salaries",
-    link: "https://github.com/skxvtchy/sentiment_analysis",
+    title: "Synthetic Media Generation",
+    link: "https://github.com/skxvtchy/synthetic_media_generation",
     description:
-      "Preprocessed data using Pandas and NumPy, Sklearn to create Model, Matlab chart creation",
+      "Using insight face's pre trained model to face swap people's face in an image",
     header: (
       <Skeleton>
         <Image
-          src="/apex.png"
+          src="/project_images/synthetic.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -195,6 +195,7 @@ const items = [
     icon: (
       <div className="flex space-x-2">
         <IconBrandPython className="h-5 w-5 text-neutral-500" />
+        <IconFlame className="h-5 w-5 text-neutral-500" />
         <IconAi className="h-5 w-5 text-neutral-500" />
       </div>
     ),

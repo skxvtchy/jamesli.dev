@@ -27,6 +27,7 @@ import {
   IconBrandAws,
   IconBrandTrello,
   IconNavigation,
+  IconFlame,
 } from "@tabler/icons-react";
 
 const Coding: React.FC = () => {
@@ -173,6 +174,30 @@ const highlighted = [
     ),
   },
   {
+    title: "Simple Blockchain",
+    link: "",
+    description:
+      "PostgreSQL for task storage, Express.js to handle API requests, Dynamic frontend.",
+    header: (
+      <Skeleton>
+        <Image
+          src="/project_images/blockchain.png"
+          alt="Project 4 Image"
+          width={600}
+          height={400}
+          className="rounded-xl object-cover"
+        />
+      </Skeleton>
+    ),
+    icon: (
+      <div className="flex space-x-2">
+        <IconBrandReact className="h-5 w-5 text-neutral-500" />
+        <IconBrandTypescript className="h-5 w-5 text-neutral-500" />
+        <IconBrandNodejs className="h-5 w-5 text-neutral-500" />
+      </div>
+    ),
+  },
+  {
     title: "Pern Stack - Todo List",
     link: "https://github.com/skxvtchy/chat-messaging",
     description:
@@ -199,41 +224,18 @@ const highlighted = [
       </div>
     ),
   },
-  {
-    title: "Linear Regression on Salaries",
-    link: "#",
-    description:
-      "Preprocessed data using Pandas and NumPy, Sklearn to create Model, Matlab chart creation",
-    header: (
-      <Skeleton>
-        <Image
-          src="/apex.png"
-          alt="Project 4 Image"
-          width={600}
-          height={400}
-          className="rounded-xl object-cover"
-        />
-      </Skeleton>
-    ),
-    icon: (
-      <div className="flex space-x-2">
-        <IconBrandPython className="h-5 w-5 text-neutral-500" />
-        <IconAi className="h-5 w-5 text-neutral-500" />
-      </div>
-    ),
-  },
 ];
 
 const ai = [
   {
-    title: "Chat Messaging Webapp",
-    link: "https://www.linkedin.com/company/etech-7/jobs/",
+    title: "Sentiment Analyis",
+    link: "https://github.com/skxvtchy/sentiment_analysis",
     description:
-      "WebSockets, JWT authentication, Data buffering and Docker containerization.",
+      "ProsusAI/finbert model with pytorch to create locally hosted sentiment analysis with fastApi",
     header: (
       <Skeleton>
         <Image
-          src="/project_images/cse312.png"
+          src="/project_images/sentiment_ai.png"
           alt="Project 4 Image"
           width={600}
           height={400}
@@ -243,12 +245,34 @@ const ai = [
     ),
     icon: (
       <div className="flex space-x-2">
-        <IconHtml className="h-5 w-5 text-neutral-500" />
-        <IconBrandJavascript className="h-5 w-5 text-neutral-500" />
-        <IconBrandCss3 className="h-5 w-5 text-neutral-500" />
         <IconBrandPython className="h-5 w-5 text-neutral-500" />
-        <IconBrandMongodb className="h-5 w-5 text-neutral-500" />
-        <IconBrandDocker className="h-5 w-5 text-neutral-500" />
+        <IconFlame className="h-5 w-5 text-neutral-500" />
+        <IconApi className="h-5 w-5 text-neutral-500" />
+        <IconAi className="h-5 w-5 text-neutral-500" />
+      </div>
+    ),
+  },
+  {
+    title: "Synthetic Media Generation",
+    link: "https://github.com/skxvtchy/synthetic_media_generation",
+    description:
+      "Using insight face's pre-trained model to face swap people's face in an image",
+    header: (
+      <Skeleton>
+        <Image
+          src="/project_images/synthetic.png"
+          alt="Project 4 Image"
+          width={600}
+          height={400}
+          className="rounded-xl object-cover"
+        />
+      </Skeleton>
+    ),
+    icon: (
+      <div className="flex space-x-2">
+        <IconBrandPython className="h-5 w-5 text-neutral-500" />
+        <IconFlame className="h-5 w-5 text-neutral-500" />
+        <IconAi className="h-5 w-5 text-neutral-500" />
       </div>
     ),
   },
