@@ -121,7 +121,7 @@ const highlighted = [
   },
   {
     title: "Chat Messaging Webapp",
-    link: "https://www.linkedin.com/company/etech-7/jobs/",
+    link: "https://github.com/skxvtchy/chat-messaging",
     description:
       "WebSockets, JWT authentication, Data buffering and Docker containerization.",
     header: (
